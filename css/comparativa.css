@@ -43,13 +43,13 @@ body{
     margin-right: 10px;
     height: 50px;
 }
-
+/* cajas blancas */
 ul {
     list-style-type: none;
     padding: 0;
     flex-grow: 1;
 }
-/*  */
+/* caracteristicas de cajas blancas */
 ul li {
     background-color: white;
     color: black;
@@ -61,4 +61,24 @@ ul li {
     position: relative;
     height: 30px;
     justify-content: center;
+}
+/* caracteristicas cajas negras */
+ul li .black-box {
+    width: 170px;
+    height: 50px;
+    background-color: black;
+    border: 2px solid white;
+    position: absolute;
+    left: 0;
+    top: -25px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+/* ajustar espacio para el cuadro */
+ul li span{
+    margin-left: 70px; 
+    text-align: center;
+    width: 100%;
+    align-self: flex-end;
+
 }
