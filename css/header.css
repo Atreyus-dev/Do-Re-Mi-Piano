@@ -12,6 +12,10 @@ header{
     height: 8rem;
 }
 
+.header__picture-logo{
+    height: 5rem;
+}
+
 .header__logo{
     height: 100%;
 }
