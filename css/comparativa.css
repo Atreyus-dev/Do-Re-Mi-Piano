@@ -40,8 +40,9 @@ body{
 }
 
 .header h2 {
-    margin-right: 10px;
-    height: 50px;
+    color: white;
+    margin: 0px;
+    font-size: 18px;
 }
 /* cajas blancas */
 ul {
@@ -74,11 +75,29 @@ ul li .black-box {
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
 }
-/* ajustar espacio para el cuadro */
+/* ajuste espacio para el cuadro */
 ul li span{
     margin-left: 70px; 
     text-align: center;
     width: 100%;
     align-self: flex-end;
 
+}
+
+/* Ajuste de espacio Button*/
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 20px;
+    width: 100%;
+    align-self: flex-end;
+}
+
+/* ajuste de efecto button */
+button:hover{
+    background-color: #0056b3;
 }
