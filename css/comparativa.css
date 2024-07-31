@@ -33,5 +33,17 @@ body{
     padding: 10px;
     border-radius: 5px;
     justify-content: center;
+}
+.header img {
+    margin-right: 10px;
+    height: 50px;
+}
+
+.header h2 {
+    margin-right: 10px;
+    height: 50px;
+}
+
+ul {
 
 }
