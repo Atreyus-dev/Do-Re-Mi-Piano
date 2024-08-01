@@ -75,6 +75,13 @@ ul li .black-box {
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
 }
+
+/* Ajuste de tamaño de iconos */
+ul li .black-box img {
+    max-width: 30%;
+    max-height: auto;
+}
+
 /* ajuste espacio para el cuadro */
 ul li span{
     margin-left: 70px; 
