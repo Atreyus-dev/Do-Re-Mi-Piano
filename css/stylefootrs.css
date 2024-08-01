@@ -1,0 +1,40 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+.footer {
+    background-color: #ccc; /* Color de fondo */
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.footer .column {
+    flex: 1;
+    text-align: center;
+}
+.footer .column1 {
+    flex: 1;
+    /* text-align: left; */
+}
+.footer img {
+    max-width: 100px;
+    margin-bottom: 10px;
+}
+
+.footer a {
+    text-decoration: none;
+    color: black;
+}
+.footer a:hover {
+    text-decoration: underline;
+}
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+.social-icons a {
+    text-decoration: none;
+}
