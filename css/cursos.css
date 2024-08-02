@@ -1,0 +1,43 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Montserrat;
+}
+
+h2{
+    font-family: Marriweather;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../assets/fonts/Montserrat-VariableFont_wght.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Merriweather';
+    src: url('../assets/fonts/Merriweather-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.cursos-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90dvw;
+    background-color: #fcb14942;
+}
+
+.cursos-card{
+    background-color: #fcb249;
+    margin: 0 1rem;
+    padding: .5rem;
+    border-radius: 8px;
+}
+
+.cursos-section__card-p{
+    color: white;
+}
