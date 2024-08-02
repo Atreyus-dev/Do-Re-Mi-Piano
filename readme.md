@@ -1,11 +1,13 @@
-# Documentación del Proyecto: Landing Page para Escuela de Música Especializada en Piano
+![Logo proyecto](assets/images/logo.jpg)
+
+# Do Re Mi Piano School: Landing Page para Escuela de Música Especializada en Piano
 
 ## 1. Descripción General del Proyecto
 
 **Do Re Mi Piano School**: Landing Page Escuela de Música Especializada en Piano
 
 **Descripción**: 
-Este proyecto consiste en la creación de una landing page destinada a una escuela de música especializada en la enseñanza de piano. La página ofrece información sobre los cursos disponibles, los profesores y las ventajas de aprender piano en esta escuela.
+Este proyecto consiste en la creación de una landing page destinada a una escuela de música especializada en la enseñanza de piano. La página ofrece información sobre los cursos disponibles y las ventajas de aprender piano en esta escuela.
 
 Lo anterior en el marco del desarrollo del programa [Talento Tech](https://talentotech.gov.co/portal/), por lo cual todo lo anterior se hace con fines educativos 
 
@@ -18,7 +20,7 @@ Lo anterior en el marco del desarrollo del programa [Talento Tech](https://talen
 
 **Estructura de Directorios y Archivos**:
 
-'''
+```
 /root
 │ index.html 
 │ README.md
@@ -31,7 +33,7 @@ Lo anterior en el marco del desarrollo del programa [Talento Tech](https://talen
     └───fonts
     └───Icons
 
-'''
+```
 
 
 ## 3. Configuración del Entorno de Desarrollo
@@ -56,10 +58,10 @@ Lo anterior en el marco del desarrollo del programa [Talento Tech](https://talen
 - Abre el archivo `index.html` en tu navegador web para ver la landing page.
 
 **Explicación de las Funcionalidades Principales**:
-- La landing page incluye un carrusel de cursos, una sección sobre los profesores y un formulario de contacto.
+- La landing page incluye un carrusel de cursos, información sobre la propuesta de valor y las caracteristicas de los cursos y la escuela, información de contacto, preguntas frecuentes y demás información relevenate para el proyecto.
 
 **Ejemplos de Uso**:
-- Al abrir `index.html`, se puede navegar por las secciones y usar el formulario de contacto.
+- Al abrir `index.html`, se puede navegar por las secciones, obtener los detalles de los cursos e iniciar el proceso de inscripción.
 
 ## 5. Pruebas
 
@@ -82,25 +84,107 @@ Lo anterior en el marco del desarrollo del programa [Talento Tech](https://talen
 **Configuración del Entorno de Producción**:
 - Verifica que todos los enlaces y recursos externos estén accesibles en la URL proporcionada por GitHub Pages.
 
-## 7. Referencias y Recursos Adicionales
+## 7. Implementación de Glider.js
+
+**Descripción de Glider.js**:
+Glider.js es una biblioteca ligera de JavaScript que se utiliza para crear carruseles y deslizadores (sliders) responsivos y accesibles. Es conocida por su facilidad de uso y por no tener dependencias, lo que la hace ideal para proyectos que buscan minimizar la cantidad de código y dependencias externas.
+
+**Incluir Glider.js**:
+
+Usando CDN:
+```html
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/glider-js/1.7.7/glider.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/glider-js/1.7.7/glider.min.js"></script>
+``` 
+Usando archivos locales:
+```html
+<link rel="stylesheet" href="glider.min.css">
+<script src="glider.min.js"></script>
+``` 
+**Estructura HTML:**
+```HTML
+<div class="glider-contain">
+  <div class="glider">
+    <div>Slide 1</div>
+    <div>Slide 2</div>
+    <div>Slide 3</div>
+    <!-- Agrega más slides según sea necesario -->
+  </div>
+
+  <button role="button" aria-label="Previous" class="glider-prev">«</button>
+  <button role="button" aria-label="Next" class="glider-next">»</button>
+  <div role="tablist" class="dots"></div>
+</div>
+```
+**Inicializar glider.js:**
+```HTML
+<script>
+  document.addEventListener('DOMContentLoaded', function(){
+    new Glider(document.querySelector('.glider'), {
+      slidesToShow: 1,
+      dots: '.dots',
+      arrows: {
+        prev: '.glider-prev',
+        next: '.glider-next'
+      }
+    });
+  });
+</script>
+```
+**Opciones de configuración:**
+
+Glider.js ofrece varias opciones de configuración que puedes ajustar según tus necesidades:
+
+- slidesToShow: Número de slides a mostrar al mismo tiempo.
+- slidesToScroll: Número de slides a desplazar en cada acción.
+- draggable: Habilitar o deshabilitar la capacidad de arrastrar los slides.
+- dots: Selector para los indicadores de navegación (dots).
+- arrows: Objetos que contienen los selectores de los botones prev y next.
+- responsive: Configuraciones responsivas para diferentes tamaños de pantalla.
+
+**Ejemplo de configuración con opciones adicionales:**
+
+```HTML
+<script>
+  document.addEventListener('DOMContentLoaded', function(){
+    new Glider(document.querySelector('.glider'), {
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      draggable: true,
+      dots: '.dots',
+      arrows: {
+        prev: '.glider-prev',
+        next: '.glider-next'
+      },
+      responsive: [
+        {
+          breakpoint: 775,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2
+          }
+        },{
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 3
+          }
+        }
+      ]
+    });
+  });
+</script>
+```
+
+## 8. Referencias y Recursos Adicionales
 
 **Documentación Adicional**:
 - [Documentación de HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
 - [Documentación de CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
 - [Documentación de JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+- [Documentación de glider.js](https://github.com/NickPiscitelli/Glider.js/blob/master/README.md)
 - [Documentación de GitHub Pages](https://docs.github.com/en/pages)
 
 **Recursos Útiles**:
 - [W3Schools](https://www.w3schools.com)
 - [CSS-Tricks](https://css-tricks.com)
-
-## 8. Licencia
-
-**Tipo de Licencia**:
-- MIT License (u otra licencia aplicable)
-
-## 9. Contacto
-
-**Información de Contacto**:
-- Correo Electrónico: alejo6481@gmail.com
-- Teléfono: 3186524866
