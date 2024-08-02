@@ -1,4 +1,4 @@
-![Logo proyecto](assets/images/logo.jpg)
+![Logo proyecto](assets/images/Logo.jpg)
 
 # Do Re Mi Piano School: Landing Page para Escuela de Música Especializada en Piano
 
