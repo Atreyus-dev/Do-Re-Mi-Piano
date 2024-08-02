@@ -1,0 +1,99 @@
+body {
+    margin: 0;
+}
+
+.banner-secundario {
+    position: relative;
+    text-align: center;
+    color: white;
+    overflow: hidden;
+}
+
+.banner-imagen {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.contenido-banner {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background-color: rgba(167, 158, 158, 0.5);
+    padding: 20px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    background-color: #fcb249;
+    border-radius: 8px;
+    font-size: larger;
+    padding: 10px 10px;
+    color: white;
+    width: 600px;
+    text-align: center;
+}
+
+.boton-inscribete {
+    background-color: #119ade;
+    color: white;
+    padding: 10px 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: background-color 0.3s ease-in;
+    display: inline-block;
+}
+
+.boton-inscribete:hover {
+    background-color: #e649198f;
+}
+
+/* Estilos para pantallas móviles */
+@media (max-width: 767px) {
+    .banner-imagen {
+        content: '';
+        background-image: url('../assets/images/Banner_secundario_Movil.jpeg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 100vh;
+    }
+
+    .contenido-banner {
+        width: 90%;
+        padding: 10px;
+    }
+}
+
+/* Estilos para tablets */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .banner-secundario {
+        background-image: url('../assets/images/Banner_secundario_ipad.jpg');
+        background-repeat: no-repeat;       
+        background-size: cover;
+        height: 100vh;
+    }
+
+    .contenido-banner {
+        width: 80%;
+    }
+}
+
+/* Estilos para pantallas de escritorio */
+@media (min-width: 1025px) {
+    .banner-secundario {
+        background-image: url('../assets/images/Banner_secundario_Web.jpeg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 100vh;
+    }
+
+    .contenido-banner {
+        width: 60%;
+    }
+}
