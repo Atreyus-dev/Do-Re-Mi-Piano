@@ -2,10 +2,12 @@
 
 ## 1. Descripción General del Proyecto
 
-**Nombre del Proyecto**: Landing Page Escuela de Música Especializada en Piano
+**Do Re Mi Piano School**: Landing Page Escuela de Música Especializada en Piano
 
 **Descripción**: 
-Este proyecto consiste en una landing page destinada a una escuela de música especializada en la enseñanza de piano. La página ofrece información sobre los cursos disponibles, los profesores y las ventajas de aprender piano en esta escuela.
+Este proyecto consiste en la creación de una landing page destinada a una escuela de música especializada en la enseñanza de piano. La página ofrece información sobre los cursos disponibles, los profesores y las ventajas de aprender piano en esta escuela.
+
+Lo anterior en el marco del desarrollo del programa [Talento Tech](https://talentotech.gov.co/portal/), por lo cual todo lo anterior se hace con fines educativos 
 
 **Tecnología Principal Utilizada**:
 - HTML
@@ -16,7 +18,20 @@ Este proyecto consiste en una landing page destinada a una escuela de música es
 
 **Estructura de Directorios y Archivos**:
 
-<!-- Aca va la estructura -->
+'''
+/root
+│ index.html 
+│ README.md
+└───CSS
+    └───style.css
+└───js
+    └───Script.js
+└───assets
+    └───images
+    └───fonts
+    └───Icons
+
+'''
 
 
 ## 3. Configuración del Entorno de Desarrollo
@@ -84,13 +99,8 @@ Este proyecto consiste en una landing page destinada a una escuela de música es
 **Tipo de Licencia**:
 - MIT License (u otra licencia aplicable)
 
-**Texto de la Licencia**:
-
-<!-- Aca va la licencia -->
-
-
 ## 9. Contacto
 
 **Información de Contacto**:
-- Correo Electrónico: [correo@example.com]
-- Teléfono: [número de teléfono]
+- Correo Electrónico: alejo6481@gmail.com
+- Teléfono: 3186524866
