@@ -16,6 +16,7 @@ Lo anterior en el marco del desarrollo del programa [Talento Tech](https://talen
 - CSS
 - JavaScript (mínimo)
 
+
 ## 2. Estructura del Proyecto
 
 **Estructura de Directorios y Archivos**:
@@ -176,7 +177,33 @@ Glider.js ofrece varias opciones de configuración que puedes ajustar según tus
 </script>
 ```
 
-## 8. Referencias y Recursos Adicionales
+## 8. Implementación de normalize.css
+**Descripción de normalize.css:**
+
+normalize.css es una pequeña biblioteca CSS que hace que los navegadores rendericen todos los elementos de forma más consistente y en línea con los estándares modernos. Es una alternativa al CSS reset.
+
+**Incluir normalize.css:**
+
+Usando CDN:
+````html
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+````
+Usando archivos locales:
+```html
+<link rel="stylesheet" href="./normalize.css">
+```
+**Uso de normalize.css:**
+
+Asegúrate de incluir normalize.css antes de tu archivo de estilos principal.
+
+```html
+<head>
+  <link rel="stylesheet" href="normalize.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+```
+
+## 9. Referencias y Recursos Adicionales
 
 **Documentación Adicional**:
 - [Documentación de HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
