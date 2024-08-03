@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto </title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/contacto.css">
+</head>
+<body>
+    <header>
+        <picture class="header__picture-logo"><a href="/"><img src="assets/images/Logo.jpg" alt="Logo" class="header__logo"></a></picture>
+        <input type="checkbox" id="checkbox">
+        <nav class="header__nav">
+            <ul class="header__nav-ul">
+                <li class="header__nav-li"><a href="about-us.html" class="header__nav-a">Sobre nosotros</a></li>
+                <li class="header__nav-li"><a href="contacto.html" class="header__nav-a">Contacto</a></li>
+                <li class="header__nav-li"><a href="FAQ.html" class="header__nav-a">FAQ</a></li>
+            </ul>
+            
+        </nav>
+        <div class="header__container-button">
+            <a href="inscripcion.html" class="header-a header__button-1">Ingresar</a>
+            <a href="login.html" class="header-a header__button-2">Inscribete</a>
+        </div>
+        <label for="checkbox" class="header__menu-button"><img src="assets/icons/menu.svg" alt="Menu desplegable"></label>
+    </header>
+    <main>
+        <div class="container">
+            <div class="contact-details">
+                <h2>Ponerse en Contacto</h2>
+                <p>Si tienes alguna pregunta, comentario o necesitas más información, por favor llena el siguiente formulario y nos pondremos en contacto contigo lo antes posible.</p>
+                
+                <form class="contact-form">
+                    <div class="textbox">
+                        <input type="text" placeholder="Nombre Completo" name="fullname" required>
+                    </div>
+                    <div class="textbox">
+                        <input type="email" placeholder="Correo Electrónico" name="email" required>
+                    </div>
+                    <div class="textbox">
+                        <input type="text" placeholder="Asunto" name="subject" required>
+                    </div>
+                    <div class="textbox">
+                        <textarea placeholder="Mensaje" name="message" required></textarea>
+                    </div>
+                    <input type="submit" class="btn" value="Enviar Mensaje">
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>
