@@ -7,6 +7,10 @@ header{
     height: 8rem;
 }
 
+.over-position{
+    z-index: 100;
+}
+
 .header__picture-logo{
     height: 5rem;
 }
@@ -84,6 +88,7 @@ header{
 
 #checkbox:checked~.header__nav{
     display: grid;
+    z-index: 10;
 }
 
 /* MEDIA QUERYS */
@@ -95,7 +100,7 @@ header{
         position: static;
         top: auto;
         display: flex;
-        z-index: 0;
+        
     }
 
     .header__nav-ul{
