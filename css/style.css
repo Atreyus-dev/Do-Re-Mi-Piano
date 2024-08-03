@@ -17,7 +17,7 @@ main{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #fcb14942;
+    background-color: #fddcad;
 }
 
 /* --------------------------------------------- */
@@ -111,20 +111,45 @@ main{
     flex-direction: column;
     align-items: center;
     width: 90dvw;
-    background-color: #fcb14942;
-    z-index: 1;
+}
+
+.main__cursos__h2{
+    margin: 1rem;
 }
 
 .cursos-card{
     background-color: #fcb249;
-    margin: 0 1rem;
+    margin: 1rem;
     padding: .5rem;
     border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cursos-section__card-img{
+    width: auto;
+}
+
+.cursos-section__card-titulo{
+    margin: .5rem;
 }
 
 .cursos-section__card-p{
     color: white;
+    margin: .3rem;
 }
+
+@media screen and (min-width:1024px) {
+    .cursos-section{
+        width: 80dvw;
+    }
+
+    .cursos-section__card-img{
+        width: 80%;
+    }
+}
+
 /* ------------------------------------------------------------- */
 /* PROPUESTA DE VALOR */
 .main__propuesta-img{
