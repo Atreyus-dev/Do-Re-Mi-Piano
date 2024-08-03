@@ -158,69 +158,58 @@ main{
 /* ------------------------------------------------------------- */
 /* BANNER SECUNDARIO */
 .banner-secundario {
-    position: relative;
     color: white;
-    overflow: hidden;
+    background-image: url("../assets/images/Banner_secundario_ipad.jpg");
+    background-size: cover;
     width: 100dvw;
     aspect-ratio: 16/9;
-}
-
-.banner-imagen {
-    width: 100%;
-    background-image: url(../assets/images/Banner_secundario_ipad.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
+    display: grid;
+    place-content: center;
 }
 
 .contenido-banner {
-    position: absolute;
-    inset: 0;
-    margin: auto;
     text-align: center;
     background-color: rgba(0, 0, 0, 0.5);
-    padding: 20px;
     border-radius: 8px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 700px;
-    height: fit-content;
 }
 
 .main__banner-secundario__h1 {
     background-color: #fcb249;
     border-radius: 8px;
     font-size: larger;
-    padding: 10px 10px;
+    padding: .5rem;
     color: white;
-    width: 600px;
+    width: 80%px;
     text-align: center;
+    font-size: 1rem;
+}
+
+.main__banner-secundario__p{
+    font-size: .75rem;
+    width: 80%;
 }
 
 .boton-inscribete {
     background-color: #4893fc;
     color: white;
-    padding: 10px 10px;
+    padding: .5rem;
+    margin: .5rem;
     text-decoration: none;
     border-radius: 5px;
     margin-top: 10px;
     transition: background-color 0.3s ease-in;
     display: inline-block;
+    font-size: .75rem;
 }
 
 .boton-inscribete:hover {
     background-color: #e649198f;
 }
 
-/* Estilos para pantallas móviles */
-@media (max-width: 767px) {
-    .banner-imagen {
-        background-image: url('../assets/images/Banner_secundario_Movil.jpeg');
-        background-size: cover;
-        background-position: center;
-    }
-}
 
 /* Estilos para tablets */
 @media (min-width: 768px) and (max-width: 1024px) {
