@@ -18,6 +18,7 @@ main{
     flex-direction: column;
     align-items: center;
     background-color: #fddcad;
+    width: 99dvw;
 }
 
 /* --------------------------------------------- */
@@ -161,7 +162,7 @@ main{
     color: white;
     background-image: url("../assets/images/Banner_secundario_ipad.jpg");
     background-size: cover;
-    width: 100dvw;
+    width: 99dvw;
     aspect-ratio: 16/9;
     display: grid;
     place-content: center;
@@ -236,7 +237,7 @@ main{
     background-image: url(../assets/images/fondo3.png);
     background-position: center;
     background-size: cover;
-    width: 100dvw;
+    width: 99dvw;
 }
 .faq-container {
     max-width: 800px;
