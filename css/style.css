@@ -25,9 +25,12 @@ main{
 /* llamado desde otro css para no repetir codigo */
 /* ------------------------------------------------------------- */
 /* BANNER PRINCIPAL*/
+
 .main__banner-principal__container{
     position: relative;
-  }
+    max-height: 800px;
+    overflow: hidden;
+}
 
 .main__banner-principal__video{
     width: 100%;
@@ -36,39 +39,70 @@ main{
   
   .center-box {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    inset: 0;
+    margin: auto;
     text-align: center;
-    background-color: rgba(255, 255, 255, 0.808); /* O cualquier color que desees */
-    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.527);
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    width: fit-content;
+    height: fit-content;
+    border-radius: 8px;
   }
   
   .main__banner-principal__h1 {
-    font-size: 2em; /* Ajusta el tamaño según tus preferencias */
-    color: #000; /* Color del título */
-    margin-bottom: 10px;
+    font-size:larger;
+    font-weight: bolder;
+    background-color: #fcb249;
+    padding: .5rem;
+    border-radius: 8px;
+    margin: .5rem;
   }
   
   .main__banner-principal__p {
-    font-size: 1em; /* Ajusta el tamaño según tus preferencias */
-    color: #555; /* Color del subtítulo */
-    margin-bottom: 20px;
+    margin: 20px;
   }
   
   .main__banner-principal__a {
-    padding: 10px;
-    margin-right: 10px;
-    border: none;
+    padding: .5rem;
+    margin: .5rem;
     background-color: #fcb249; /* Color del botón */
     color: white; /* Color del texto dentro del botón */
     border-radius: 8px;
     text-decoration: none;
+    display: inline-block;
+    font-size: small;
   }
   
   .insc{  
     background-color: #4893fc;
+  }
+
+  @media screen and (min-width:767px) {
+    .main__banner-principal__h1{
+        font-size: 2rem;
+    }
+
+    .main__banner-principal__p{
+        font-size: 1.1rem;
+    }
+
+    .main__banner-principal__a{
+        font-size: 1.2rem;
+    }
+  }
+
+  @media screen and (min-width:1024px) {
+    .main__banner-principal__h1{
+        font-size: 4rem;
+    }
+
+    .main__banner-principal__p{
+        font-size: 1.5rem;
+    }
+
+    .main__banner-principal__a{
+        font-size: 1.5rem;
+    }
   }
 /* ------------------------------------------------------------- */
 /* SECCION DE CURSOS */
@@ -78,6 +112,7 @@ main{
     align-items: center;
     width: 90dvw;
     background-color: #fcb14942;
+    z-index: 1;
 }
 
 .cursos-card{
