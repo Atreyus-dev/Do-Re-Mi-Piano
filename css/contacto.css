@@ -9,9 +9,12 @@ body {
     font-family: 'Montserrat', Arial, sans-serif;
     display: grid;
     grid-template-rows: auto 1fr auto;
+    background-image: url("../assets/images/fondo3.png");
+    background-size: cover;
+    background-position: center;
 }
 main{
-    background-color: #fcb249;
+    background-color: #fcb14938;
 }
 h2{
     margin: .1rem;

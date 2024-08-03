@@ -6,13 +6,6 @@
 }
 
 @font-face {
-    font-family: 'Merriweather';
-    src: url('../assets/fonts/Merriweather-Regular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
     font-family: 'Bebas';
     src: url('../assets/fonts/BebasNeue-Regular.ttf') format('truetype');
     font-weight: normal;
@@ -22,6 +15,7 @@
 body{
     display: grid;
     grid-template-rows: auto 1fr auto;
+    font-family: Montserrat, Arial, Helvetica, sans-serif;
 }
 
 header{
@@ -40,7 +34,7 @@ h1{
     font-family: bebas, arial;
 }
 
-img{
+.img-tito{
     height: 30dvh;
     margin: 1rem;
 }
