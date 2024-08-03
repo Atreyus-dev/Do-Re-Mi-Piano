@@ -4,8 +4,185 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Do Re Mi Piano</title>
+    <link rel="icon" href="assets/images/Logo.jpg">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/glider.min.css"><!-- bilioteca glider.js para carrusel -->
 </head>
 <body>
-    
+    <header>
+        <picture class="header__picture-logo"><a href="/"><img src="assets/images/Logo.jpg" alt="Logo" class="header__logo"></a></picture>
+        <input type="checkbox" id="checkbox">
+        <nav class="header__nav">
+            <ul class="header__nav-ul">
+                <li class="header__nav-li"><a href="about-us.html" class="header__nav-a">Sobre nosotros</a></li>
+                <li class="header__nav-li"><a href="contacto.html" class="header__nav-a">Contacto</a></li>
+                <li class="header__nav-li"><a href="FAQ.html" class="header__nav-a">FAQ</a></li>
+            </ul>
+            
+        </nav>
+        <div class="header__container-button">
+            <a href="inscripcion.html" class="header-a header__button-1">Ingresar</a>
+            <a href="login.html" class="header-a header__button-2">Inscribete</a>
+        </div>
+        <label for="checkbox" class="header__menu-button"><img src="assets/icons/menu.svg" alt="Menu desplegable"></label>
+    </header>
+    <main>
+        <section class="main__banner-principal">
+            <div class="main__banner-principal__container">
+                <video src="assets/videos/banner.webm" class="main__banner-principal__video" autoplay muted loop></video>
+                <div class="center-box">
+                <h1 class="main__banner-principal__h1">Desarrolla tu talento musical</h1>
+                <p class="main__banner-principal__p">Para todas las edades y niveles</p>
+                <a class="main__banner-principal__a info" href="#cursos">Más información</a>
+                <a class="main__banner-principal__a insc" href="inscripcion.html">Inscríbete ahora</a>
+            </div>
+        </section>
+        <section class="cursos-section">
+            <h2>Nuestros cursos</h2>
+            <div class="glider-contain">
+                <div class="glider">
+                    <div class="cursos-card">
+                        <img src="assets/images/curso-1.png" alt="Curso fundamentos" class="cursos-section__card-img">
+                        <h3 class="cursos-section__card-titulo">Fundamentos</h3>
+                        <p class="cursos-section__card-p">Para los que inician desde cero</p>
+                    </div>
+                    <div class="cursos-card">
+                        <img src="assets/images/curso-2.png" alt="Curso lectura de partituras" class="cursos-section__card-img">
+                        <h3 class="cursos-section__card-titulo">Lectura de partituras</h3>
+                        <p class="cursos-section__card-p">Descifra el lenguaje musical</p>
+                    </div>
+                    <div class="cursos-card">
+                        <img src="assets/images/curso-3.png" alt="Curso de técnicas básicas" class="cursos-section__card-img">
+                        <h3 class="cursos-section__card-titulo">Técnicas básicas</h3>
+                        <p class="cursos-section__card-p">Domina los principios</p>
+                    </div>
+                    <div class="cursos-card">
+                        <img src="assets/images/curso-4.png" alt="Curso de repertorio inicial" class="cursos-section__card-img">
+                        <h3 class="cursos-section__card-titulo">Repertorio Inicial</h3>
+                        <p class="cursos-section__card-p">Tu primer setlist</p>
+                    </div>
+                    <div class="cursos-card">
+                        <img src="assets/images/curso-5.png" alt="Curso de habilidades musicales" class="cursos-section__card-img">
+                        <h3 class="cursos-section__card-titulo">Habilidades Musicales</h3>
+                        <p class="cursos-section__card-p">Potencia tu talento</p>
+                    </div>
+                    <div class="cursos-card">
+                        <img src="assets/images/curso-6.png" alt="Curso de interpretación y expresión" class="cursos-section__card-img">
+                        <h3 class="cursos-section__card-titulo">Interpretación y expresión</h3>
+                        <p class="cursos-section__card-p">Siente y transmite la música</p>
+                    </div>
+                </div>
+                <button aria-label="Previous" class="glider-prev">«</button>
+                <button aria-label="Next" class="glider-next">»</button>
+                <div role="tablist" class="dots"></div>
+            </div>
+            <script src="js/glider.min.js"></script>
+            <script src="js/gliderconfig.js"></script>
+        </section>
+        <section class="main__propuesta">
+            <img src="assets/images/Propuesta de valor.png" alt="propuesta de valor de la escuela" class="main__propuesta-img">
+        </section>
+        <section class="main__banner-secundario">
+            <div class="banner-secundario">
+                <div class="banner-imagen"></div>
+               
+                <div class="contenido-banner">
+                    <h1 class="main__banner-secundario__h1">Descubre la Magia del Piano</h1>
+                    <p class="main__banner-secundario__p">Descubre la historia y los diferentes tipos de piano.
+                        <br> Explora los innumerables beneficios de tocar este instrumento a cualquier edad.
+                    </p>
+                    <a href="historia.html" class="boton-inscribete">Conoce más</a>
+                </div>
+            </div>
+        </section>
+        <section class="main__faq">
+            <div class="faq-container" >
+                <h2 class="main__faq-h2">Preguntas frecuentes</h1>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        ¿Necesito tener un piano en casa para tomar clases?
+                        <span class="arrow">&#9662;</span>
+                    </button>
+                    <div class="faq-answer">Es recomendable tener un piano o teclado en casa para practicar, pero no es obligatorio para empezar.</div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        ¿Ofrecen clases particulares y grupales?
+                        <span class="arrow">&#9662;</span>
+                    </button>
+                    <div class="faq-answer">Sí, ofrecemos tanto clases particulares como grupales. Puedes elegir el formato que mejor se adapte a tus necesidades.</div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        ¿Hay una edad mínima para tomar clases?
+                        <span class="arrow">&#9662;</span>
+                    </button>
+                    <div class="faq-answer">No hay una edad mínima estricta, pero recomendamos que los niños tengan al menos 5 años para comenzar con las clases de piano.</div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        ¿Hay recitales o presentaciones para los estudiantes?
+                        <span class="arrow">&#9662;</span>
+                    </button>
+                    <div class="faq-answer">Sí, organizamos recitales y presentaciones regularmente para que los estudiantes puedan mostrar su progreso y ganar experiencia en el escenario.</div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        ¿Cuál es la política de cancelación de clases?
+                        <span class="arrow">&#9662;</span>
+                    </button>
+                    <div class="faq-answer">Las clases pueden cancelarse con al menos 24 horas de antelación sin cargo. Las cancelaciones de último minuto pueden estar sujetas a una tarifa.</div>
+                </div>
+        
+                <a href="FAQ" class="main__faq-a">Ver más</a>
+                
+            </div>
+            <script src="js/pf.js"></script>
+        </section>
+    </main>
+    <footer>
+        <div class="footer__column-1">
+            <a href="/">
+            <img src="assets/images/Logo.jpg" alt="logo" class="footer__logo">
+            </a>
+            <div class="footer__container-icons">
+                <a href="https://www.facebook.com" target="_blank" rel="noreferer">
+                    <img src="assets/icons/facebook.svg" alt="icono facebook">
+                </a>
+                <a href="https://www.instagram.com" target="_blank" rel="noreferer">
+                    <img src="assets/icons/instagram.svg" alt="icono instagram">
+                </a>
+                <a href="https://x.com/" target="_blank" rel="noreferer">
+                    <img src="assets/icons/brand-x.svg" alt="icono X red social">
+                </a>
+                <a href="https://github.com/Atreyus-dev/Do-Re-Mi-Piano" target="_blank" rel="noreferer">
+                    <img src="assets/icons/brand-github.svg" alt="icono github">
+                </a>
+            </div>
+        </div>
+        <div class="footer__column-2">
+            <h3 class="footer__h3">Proyecto</h3>
+            <ul>
+                <li class="footer__li"><a href="terminosycondiciones.html" class="footer__a">Terminos y condiciones</a></li>
+                <li class="footer__li"><a href="privacidad.html" class="footer__a">Politica de privacidad</a></li>
+                <li class="footer__li"><a href="about-us.html" class="footer__a">Sobre nosotros</a></li>
+                <li class="footer__li"><a href="faq.html" class="footer__a">FAQ</a></li>
+                <li class="footer__li"><a href="contacto.html" class="footer__a">Contacto</a></li>
+                <li class="footer__li"><a href="inscripcion.html" class="footer__a">Inscripción</a></li>
+            </ul>
+        </div>
+        <div class="footer__column-3">
+            <h3 class="footer__h3">Desarrollo</h3>
+            <ul>
+                <li class="footer__li"><a href="" class="footer__a" target="_blank" rel="noreferer">Figma</a></li>
+                <li class="footer__li"><a href="" class="footer__a" target="_blank" rel="noreferer">Sitemap</a></li>
+                <li class="footer__li"><a href="https://github.com/Atreyus-dev/Do-Re-Mi-Piano" class="footer__a" target="_blank" rel="noreferer">Repositorio</a></li>
+                <li class="footer__li"><a href="" class="footer__a" target="_blank" rel="noreferer">Prezi</a></li>
+            </ul>
+        </div>
+    </footer>
 </body>
 </html>

@@ -1,0 +1,261 @@
+/* Estilos globales */
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../assets/fonts/Montserrat-VariableFont_wght.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    font-family: Montserrat, Arial, Helvetica, sans-serif;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fcb14942;
+}
+
+/* --------------------------------------------- */
+/* HEADER */
+/* llamado desde otro css para no repetir codigo */
+/* ------------------------------------------------------------- */
+/* BANNER PRINCIPAL*/
+.main__banner-principal__container{
+    position: relative;
+  }
+
+.main__banner-principal__video{
+    width: 100%;
+    aspect-ratio: 16/9;
+}
+  
+  .center-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.808); /* O cualquier color que desees */
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  }
+  
+  .main__banner-principal__h1 {
+    font-size: 2em; /* Ajusta el tamaño según tus preferencias */
+    color: #000; /* Color del título */
+    margin-bottom: 10px;
+  }
+  
+  .main__banner-principal__p {
+    font-size: 1em; /* Ajusta el tamaño según tus preferencias */
+    color: #555; /* Color del subtítulo */
+    margin-bottom: 20px;
+  }
+  
+  .main__banner-principal__a {
+    padding: 10px;
+    margin-right: 10px;
+    border: none;
+    background-color: #fcb249; /* Color del botón */
+    color: white; /* Color del texto dentro del botón */
+    border-radius: 8px;
+    text-decoration: none;
+  }
+  
+  .insc{  
+    background-color: #4893fc;
+  }
+/* ------------------------------------------------------------- */
+/* SECCION DE CURSOS */
+.cursos-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90dvw;
+    background-color: #fcb14942;
+}
+
+.cursos-card{
+    background-color: #fcb249;
+    margin: 0 1rem;
+    padding: .5rem;
+    border-radius: 8px;
+}
+
+.cursos-section__card-p{
+    color: white;
+}
+/* ------------------------------------------------------------- */
+/* PROPUESTA DE VALOR */
+.main__propuesta-img{
+    width: 100%;
+}
+/* ------------------------------------------------------------- */
+/* BANNER SECUNDARIO */
+.banner-secundario {
+    position: relative;
+    color: white;
+    overflow: hidden;
+    width: 100dvw;
+    aspect-ratio: 16/9;
+}
+
+.banner-imagen {
+    width: 100%;
+    background-image: url(../assets/images/Banner_secundario_ipad.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.contenido-banner {
+    position: absolute;
+    inset: 0;
+    margin: auto;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 700px;
+    height: fit-content;
+}
+
+.main__banner-secundario__h1 {
+    background-color: #fcb249;
+    border-radius: 8px;
+    font-size: larger;
+    padding: 10px 10px;
+    color: white;
+    width: 600px;
+    text-align: center;
+}
+
+.boton-inscribete {
+    background-color: #4893fc;
+    color: white;
+    padding: 10px 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: background-color 0.3s ease-in;
+    display: inline-block;
+}
+
+.boton-inscribete:hover {
+    background-color: #e649198f;
+}
+
+/* Estilos para pantallas móviles */
+@media (max-width: 767px) {
+    .banner-imagen {
+        background-image: url('../assets/images/Banner_secundario_Movil.jpeg');
+        background-size: cover;
+        background-position: center;
+    }
+}
+
+/* Estilos para tablets */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .banner-secundario {
+        background-image: url('../assets/images/Banner_secundario_ipad.jpg');
+        background-size: cover;
+        background-position: center;
+    }
+}
+
+/* Estilos para pantallas de escritorio */
+@media (min-width: 1025px) {
+    .banner-secundario {
+        background-image: url('../assets/images/Banner_secundario_Web.jpeg');
+        background-size: cover;
+        background-position: center;
+        max-height: 800px;
+    }
+} 
+/* ------------------------------------------------------------- */
+/* FAQ */
+
+.main__faq{
+    background-image: url(../assets/images/fondo3.png);
+    background-position: center;
+    background-size: cover;
+    width: 100dvw;
+}
+.faq-container {
+    max-width: 800px;
+    margin: 50px auto;
+    background-color: #fcb249;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.main__faq-h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.faq-item {
+    border-bottom: 1px solid #eee;
+    padding: 10px 0;
+}
+
+.faq-question {
+    width: 100%;
+    background-color: #f7f7f7;
+    border: none;
+    font-size: 16px;
+    padding: 10px;
+    text-align: left;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.faq-question:hover {
+    background-color: #e6e6e6;
+}
+
+.faq-answer {
+    display: none;
+    font-size: 14px;
+    margin-top: 10px;
+    color: #555;
+}
+
+.arrow {
+    transition: transform 0.3s;
+}
+
+.faq-item.open .arrow {
+    transform: rotate(180deg);
+}
+
+.main__faq-a{
+    text-decoration: none;
+    padding: .5rem;
+    background-color: #4893fc;
+    border-radius: 8px;
+    margin: 1rem auto;
+    width: fit-content;
+    color: white;
+}
+@media (max-width: 730px) {
+    .footer {
+        flex-direction: column; 
+        align-items: flex-start; 
+        padding-left: 20px; 
+    }
+}
