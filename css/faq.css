@@ -1,0 +1,60 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../assets/fonts/Merriweather-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100dvh;
+    background-image: url("../assets/images/fondo3.png");
+    font-family: Montserrat, Arial, Helvetica, sans-serif;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('fonts/Montserrat-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    padding: 20px 0;
+}
+
+.faqs {
+    background: #fcb249;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    margin-top: 20px;
+}
+
+.faq summary {
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 10px;
+    padding: 10px;
+    background: #f4f4f4;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.faq summary:hover {
+    background: #e0e0e0;
+}
+
+.faq p {
+    color: #666;
+    margin: 10px 0 0 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+}
