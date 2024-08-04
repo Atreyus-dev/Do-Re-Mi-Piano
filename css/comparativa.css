@@ -79,7 +79,7 @@ ul li .black-box {
 /* Ajuste de tamaño de iconos */
 ul li .black-box img {
     max-width: auto;
-    max-height: 20%;
+    max-height: 40%;
 }
 
 /* ajuste espacio para el cuadro */
@@ -93,7 +93,7 @@ ul li span{
 
 /* Ajuste de espacio Button*/
 button {
-    background-color: #4893FC;
+    background-color: #055bb5;
     color: white;
     border: none;
     padding: 10px 20px;
