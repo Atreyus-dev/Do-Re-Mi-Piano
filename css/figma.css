@@ -1,0 +1,29 @@
+body{
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100dvh;
+}
+
+main{
+    display: grid;
+    place-content: center;
+}
+
+iframe{
+    width: 360px;
+    height: 500px;
+}
+
+@media screen and (min-width:767px) and (max-width:1024px){
+    iframe{
+        width: 700px;
+        height: 700px;
+    }
+}
+
+@media screen and (min-width:1024px){
+    iframe{
+        width: 1920px;
+        height: 600px;
+    }
+}
