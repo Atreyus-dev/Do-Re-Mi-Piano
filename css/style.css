@@ -165,7 +165,7 @@ main{
 /* BANNER SECUNDARIO */
 .banner-secundario {
     color: white;
-    background-image: url("../assets/images/Banner_secundario_ipad.jpg");
+    background-image: url("../assets/images/Banner_secundario_ipad.webp");
     background-size: cover;
     width: 99dvw;
     aspect-ratio: 16/9;
@@ -220,7 +220,7 @@ main{
 /* Estilos para tablets */
 @media (min-width: 768px) and (max-width: 1024px) {
     .banner-secundario {
-        background-image: url('../assets/images/Banner_secundario_ipad.jpg');
+        background-image: url('../assets/images/Banner_secundario_ipad.webp');
         background-size: cover;
         background-position: center;
     }
@@ -229,7 +229,7 @@ main{
 /* Estilos para pantallas de escritorio */
 @media (min-width: 1025px) {
     .banner-secundario {
-        background-image: url('../assets/images/Banner_secundario_Web.jpeg');
+        background-image: url('../assets/images/Banner_secundario_Web.webp');
         background-size: cover;
         background-position: center;
         max-height: 800px;
