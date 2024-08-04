@@ -1,7 +1,12 @@
+@font-face {
+    font-family: Montserrat;
+    src: url("../assets/fonts/Montserrat-VariableFont_wght.ttf");
+}
 body{
     display: grid;
     grid-template-rows: auto 1fr auto;
     min-height: 100dvh;
+    font-family: Montserrat, Arial, Helvetica, sans-serif;
 }
 
 main{
