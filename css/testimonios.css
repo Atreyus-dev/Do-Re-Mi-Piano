@@ -1,0 +1,68 @@
+body {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    background-color: white;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    grid-gap: 30px;
+}
+
+.Testimonios {
+    grid-column: 1 / -1; 
+}
+
+h4{
+    color: #fcb249;
+}
+
+.container {
+    display: grid;
+    display: center;
+    grid-template-columns: repeat(4, 1fr); 
+    grid-gap: 30px;
+    width: 40pc;
+    padding: 20%;
+}
+
+img{
+    width: 30%;
+    height: 30%;
+    object-fit: contain;
+    object-position: left;
+    clip-path: circle(50%);
+    margin: 10px;
+}
+
+.rating {
+    color: #fcb249 ;
+    font-size: 1.0em;
+    margin-bottom: 10px;
+}
+
+section{
+    border-radius: 8px;
+    box-shadow: 2px 2px 5px;
+    padding: 10px;
+    display: grid;
+     grid-template-columns: 1fr;
+     grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+.primero{
+    grid-column: ;
+}
+
+p{
+    font-size: small;
+}
+
+@media (max-width: 768px) {
+    body {
+        grid-template-columns: 1fr; 
+    }
+    .container {
+        grid-template-columns: 1fr; 
+    }
+}
+
+ 
