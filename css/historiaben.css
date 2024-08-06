@@ -4,13 +4,17 @@ body {
     background-color: #f0f0f0;
     margin: 0;
     padding: 0;
-    display:contents;
+    display: contents;
+}
+
+main {
+    width: 99dvw;
 }
 
 /* Contenedor principal */
 .container {
     background-color: white;
-    width: 1350px;
+    width: 100%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
 }
@@ -55,14 +59,13 @@ body {
     text-align: rigth;
     border-radius: 8px;
     margin: 30px;
-    width:30%;
+    width: auto;
 }
 
 /* Sección de imagen */
 .image img {
     width: 1400px;
     height: 300px;
-
 }
 
 /* Sección de beneficios */
