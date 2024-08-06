@@ -165,6 +165,150 @@ main {
     width: 100%;
 }
 /* ------------------------------------------------------------- */
+/* COMPARATIVA */
+.main__comp {
+    display: flex;
+    flex-direction: column;
+    background-image: url(../assets/images/fondo3.png);
+    background-size: cover;
+    background-position: center;
+    align-items: center;
+    width: 100%;
+}
+
+.container {
+    display: flex;
+    gap: 3rem;
+    justify-content: space-around;
+    width: 80%;
+    background-color: #fcb1498c;
+    padding: 40px;
+    border-radius: 8px;
+}
+.column {
+    background-color: #333;
+    padding: 40px;
+    border-radius: 10px;
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    background-color: #fcb249;
+    padding: 10px;
+    border-radius: 5px;
+    justify-content: center;
+}
+.header img {
+    margin-right: 10px;
+    height: 80px;
+}
+
+.header h2 {
+    color: black;
+    margin: 0px;
+    font-size: 22px;
+}
+/* cajas blancas */
+.main__comp-ul {
+    list-style-type: none;
+    padding: 0;
+    flex-grow: 1;
+}
+/* caracteristicas de cajas blancas */
+.main__comp-li {
+    background-color: white;
+    color: black;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    height: 30px;
+    justify-content: center;
+}
+/* caracteristicas cajas negras */
+.main__comp-li .black-box {
+    width: 170px;
+    height: 45px;
+    background-color: black;
+    border: 2px solid white;
+    position: absolute;
+    left: 0;
+    top: -15px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Ajuste de tamaño de iconos */
+.main__comp-li .black-box img {
+    max-width: auto;
+    max-height: 42px;
+}
+
+/* ajuste espacio para el cuadro */
+.main__comp-li span {
+    margin-left: 70px;
+    text-align: right;
+    width: 100%;
+}
+
+/* Ajuste de espacio Button*/
+.main__comp-a {
+    background-color: #055bb5;
+    color: white;
+    border-radius: 8px;
+    padding: 0.5rem;
+    margin: 1rem auto;
+    text-decoration: none;
+}
+
+/* ajuste de efecto button */
+.main__comp-a:hover {
+    background-color: #fcb249;
+    color: black;
+}
+/* media queries */
+@media (max-width: 767px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+    .column {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+@media (min-width: 768px) and(max-width:1024px) {
+    .container {
+        width: 100%;
+        padding: 20px;
+    }
+    .column {
+        width: 45%;
+        padding: 20px;
+    }
+}
+@media (min-width: 1025px) {
+    .container {
+        width: 80%;
+        padding: 40px;
+    }
+    .column {
+        width: 45%;
+        padding: 40px;
+    }
+}
+/* ------------------------------------------------------------- */
 /* BANNER SECUNDARIO */
 .banner-secundario {
     color: white;
