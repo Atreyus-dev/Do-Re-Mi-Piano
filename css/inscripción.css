@@ -89,3 +89,9 @@ main {
 .register-box a:hover {
     color: #055bb5;
 }
+
+@media screen and (max-width: 767px) {
+    .register-box {
+        width: 90%;
+    }
+}
