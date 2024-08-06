@@ -229,13 +229,13 @@ main {
     display: flex;
     align-items: center;
     position: relative;
-    height: 30px;
+    height: 35px;
     justify-content: center;
 }
 /* caracteristicas cajas negras */
 .main__comp-li .black-box {
-    width: 170px;
-    height: 45px;
+    width: 30%;
+    height: 30px;
     background-color: black;
     border: 2px solid white;
     position: absolute;
@@ -250,7 +250,7 @@ main {
 
 /* Ajuste de tamaño de iconos */
 .main__comp-li .black-box img {
-    max-width: auto;
+    width: 30%;
     max-height: 42px;
 }
 
@@ -286,6 +286,12 @@ main {
     .column {
         width: 100%;
         margin-bottom: 20px;
+    }
+
+    .header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
     }
 }
 @media (min-width: 768px) and(max-width:1024px) {
