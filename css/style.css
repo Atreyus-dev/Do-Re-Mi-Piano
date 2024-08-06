@@ -402,10 +402,7 @@ main {
     flex-direction: column;
     align-items: center;
     margin: 2rem 0;
-}
-
-.Testimonios {
-    grid-column: 1 / -1;
+    width: 99dvw;
 }
 
 h4 {
@@ -415,22 +412,22 @@ h4 {
 }
 
 .main__test-container {
-    display: grid;
-    place-content: center;
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 30px;
+    display: flex;
+    gap: 2rem;
     background-color: #fcb14954;
     margin: 2rem 0;
+    width: 99dvw;
 }
 
 .test-img-container {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 1rem;
 }
 
 .test-img {
-    width: 50%;
+    width: 35%;
     object-fit: contain;
     margin: 10px auto;
 }
@@ -461,11 +458,8 @@ h4 {
 }
 
 @media (max-width: 768px) {
-    body {
-        grid-template-columns: 1fr;
-    }
-    .container {
-        grid-template-columns: 1fr;
+    .main__test-container {
+        flex-direction: column;
     }
 }
 /* ------------------------------------------------------------- */
