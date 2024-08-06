@@ -238,6 +238,80 @@ main {
     }
 }
 /* ------------------------------------------------------------- */
+/* TESTIMONIOS */
+
+.main__testimonios {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem 0;
+}
+
+.Testimonios {
+    grid-column: 1 / -1;
+}
+
+h4 {
+    color: #fcb249;
+    text-align: center;
+    margin: 0.75rem;
+}
+
+.main__test-container {
+    display: grid;
+    place-content: center;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 30px;
+    background-color: #fcb14954;
+    margin: 2rem 0;
+}
+
+.test-img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.test-img {
+    width: 50%;
+    object-fit: contain;
+    margin: 10px auto;
+}
+
+.rating {
+    color: #fcb249;
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+
+.primero,
+.segundo,
+.tercero,
+.cuarto {
+    border-radius: 8px;
+    box-shadow: 2px 2px 5px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+}
+
+.test-p {
+    font-size: small;
+    margin: 0.5rem;
+}
+
+@media (max-width: 768px) {
+    body {
+        grid-template-columns: 1fr;
+    }
+    .container {
+        grid-template-columns: 1fr;
+    }
+}
+/* ------------------------------------------------------------- */
 /* FAQ */
 
 .main__faq {
