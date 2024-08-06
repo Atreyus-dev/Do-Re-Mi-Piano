@@ -1,34 +1,38 @@
 @font-face {
-    font-family: 'Montserrat';
-    src: url('../assets/fonts/Montserrat-VariableFont_wght.ttf') format('truetype');
+    font-family: "Montserrat";
+    src: url("../assets/fonts/Montserrat-VariableFont_wght.ttf")
+        format("truetype");
     font-weight: normal;
     font-style: normal;
 }
 
 body {
-    font-family: 'Montserrat', Arial, sans-serif;
+    font-family: "Montserrat", Arial, sans-serif;
     display: grid;
     grid-template-rows: auto 1fr auto;
     background-image: url("../assets/images/fondo3.png");
     min-height: 100dvh;
 }
 
+main {
+    background-color: #fcb14950;
+}
+
 .login-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #fcb1493a;
-    min-height: 50dvh;
 }
 
 .login-box {
     background: #fff;
     padding: 40px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     text-align: center;
     width: 50%;
     max-width: 600px;
+    margin: 3rem 0;
 }
 
 .login-box h1 {
