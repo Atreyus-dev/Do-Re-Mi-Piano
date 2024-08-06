@@ -29,20 +29,21 @@ body{
     display: flex;
     align-items: center;
     margin-bottom: 10px;
-    background-color: #ffa500;
+    background-color: #fcb249;
     padding: 10px;
     border-radius: 5px;
     justify-content: center;
 }
 .header img {
     margin-right: 10px;
-    height: 50px;
+    height: 80px;
 }
 
+
 .header h2 {
-    color: white;
+    color: black;
     margin: 0px;
-    font-size: 18px;
+    font-size: 22px;
 }
 /* cajas blancas */
 ul {
@@ -66,20 +67,25 @@ ul li {
 /* caracteristicas cajas negras */
 ul li .black-box {
     width: 170px;
-    height: 50px;
+    height: 45px;
     background-color: black;
     border: 2px solid white;
     position: absolute;
     left: 0;
-    top: -25px;
+    top: -15px;
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 /* Ajuste de tamaño de iconos */
 ul li .black-box img {
-    max-width: 30%;
-    max-height: auto;
+    max-width: auto;
+    max-height: 42px;
+    
+    
 }
 
 /* ajuste espacio para el cuadro */
@@ -93,7 +99,7 @@ ul li span{
 
 /* Ajuste de espacio Button*/
 button {
-    background-color: #007bff;
+    background-color: #055bb5;
     color: white;
     border: none;
     padding: 10px 20px;

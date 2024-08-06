@@ -19,19 +19,8 @@ body {
     overflow: hidden;
 }
 
-header {
-    background: #000000;
-    color: #fff;
-    padding-top: 30px;
-    min-height: 70px;
-    border-bottom: #fcb249 3px solid;
-}
-
-header a {
-    color: #fff;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 16px;
+p{
+    margin: .5rem;
 }
 
 ul {
@@ -46,3 +35,5 @@ ul {
     margin-bottom: 20px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
+
+

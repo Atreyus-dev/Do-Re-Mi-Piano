@@ -1,0 +1,59 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../assets/fonts/Merriweather-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100dvh;
+    background-image: url("../assets/images/fondo3.png");
+    font-family: Montserrat, Arial, Helvetica, sans-serif;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.about-us {
+    background: #fcb249;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    margin-top: 20px;
+}
+
+.about-us h2 {
+    color: #333;
+    margin-top: 0;
+}
+
+.about-us p {
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.testimonials blockquote {
+    background: #f9f9f9;
+    border-left: 10px solid #4893fc;
+    margin: 20px 0;
+    padding: 10px 20px;
+    quotes: "“" "”" "‘" "’";
+}
+
+.testimonials blockquote p {
+    color: #333;
+    margin: 0;
+    font-style: italic;
+}
+
+.testimonials blockquote footer {
+    color: #666;
+    width: 100%;
+    margin-top: 10px;
+    text-align: right;
+}

@@ -1,0 +1,117 @@
+/* Estilos generales del cuerpo */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    display:contents;
+}
+
+/* Contenedor principal */
+.container {
+    background-color: white;
+    width: 1350px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+/* Cabecera principal */
+.header {
+    background-color: #fcb249;
+    color: black;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Subcabecera */
+.subheader {
+    background-color: #f0f0f0;
+    color: black;
+    padding: 10px;
+    text-align: center;
+    font-size: 18px;
+}
+
+/* Contenido principal */
+.content {
+    position: relative;
+    width: 100%;
+    height: 300px; /* Puedes ajustar la altura según sea necesario */
+}
+
+/* Sección de texto */
+.text-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
+    color: white;
+    padding: 30px;
+    text-align: rigth;
+    border-radius: 8px;
+    margin: 30px;
+    width:30%;
+}
+
+/* Sección de imagen */
+.image img {
+    width: 1400px;
+    height: 300px;
+
+}
+
+/* Sección de beneficios */
+.benefits {
+    display: flex;
+    flex-direction: column; /* Ajuste para dispositivos pequeños */
+    justify-content: space-around;
+    padding: 20px;
+    background-color: #f0f0f0;
+}
+
+/* Estilos para cada beneficio */
+.benefit {
+    text-align: center;
+    flex: 1;
+    margin: 10px 0;
+}
+
+.benefit img {
+    width: 50px;
+    height: 50px;
+}
+
+/* Pie de página */
+.footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #f0f0f0;
+}
+
+.footer button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.footer button:hover {
+    background-color: #0056b3;
+}
+
+/* Media queries para ajustar el diseño en pantallas más grandes */
+@media (min-width: 768px) {
+    .benefits {
+        flex-direction: row;
+    }
+    .benefit {
+        margin: 0 10px;
+    }
+}
