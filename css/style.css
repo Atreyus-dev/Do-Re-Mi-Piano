@@ -1,19 +1,20 @@
 /* Estilos globales */
 
 @font-face {
-    font-family: 'Montserrat';
-    src: url('../assets/fonts/Montserrat-VariableFont_wght.ttf') format('truetype');
+    font-family: "Montserrat";
+    src: url("../assets/fonts/Montserrat-VariableFont_wght.ttf")
+        format("truetype");
     font-weight: normal;
     font-style: normal;
 }
 
-body{
+body {
     display: grid;
     grid-template-rows: auto 1fr auto;
     font-family: Montserrat, Arial, Helvetica, sans-serif;
 }
 
-main{
+main {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -27,139 +28,298 @@ main{
 /* ------------------------------------------------------------- */
 /* BANNER PRINCIPAL*/
 
-.main__banner-principal__container{
+.main__banner-principal__container {
     position: relative;
     max-height: 800px;
     overflow: hidden;
 }
 
-.main__banner-principal__video{
+.main__banner-principal__video {
     width: 100%;
     aspect-ratio: 16/9;
 }
-  
-  .center-box {
+
+.center-box {
     position: absolute;
     inset: 0;
     margin: auto;
     text-align: center;
-    background-color: rgba(255, 255, 255, 0.527);
+    background-color: rgba(0, 0, 0, 0.527);
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
     width: fit-content;
     height: fit-content;
     border-radius: 8px;
-  }
-  
-  .main__banner-principal__h1 {
-    font-size:larger;
+    color: white;
+    padding: 1rem;
+}
+
+.main__banner-principal__h1 {
+    font-size: larger;
     font-weight: bolder;
     background-color: #fcb249;
-    padding: .5rem;
+    padding: 0.5rem;
     border-radius: 8px;
-    margin: .5rem;
-  }
-  
-  .main__banner-principal__p {
+    margin: 0.5rem;
+}
+
+.main__banner-principal__p {
     margin: 20px;
-  }
-  
-  .main__banner-principal__a {
-    padding: .5rem;
-    margin: .5rem;
+}
+
+.main__banner-principal__a {
+    padding: 0.5rem;
+    margin: 0.5rem;
     background-color: #fcb249; /* Color del botón */
     color: white; /* Color del texto dentro del botón */
     border-radius: 8px;
     text-decoration: none;
     display: inline-block;
     font-size: small;
-  }
-  
-  .insc{  
-    background-color: #4893fc;
-  }
+}
 
-  @media screen and (min-width:767px) {
-    .main__banner-principal__h1{
+.insc {
+    background-color: #4893fc;
+}
+
+@media screen and (min-width: 767px) {
+    .main__banner-principal__h1 {
         font-size: 2rem;
     }
 
-    .main__banner-principal__p{
+    .main__banner-principal__p {
         font-size: 1.1rem;
     }
 
-    .main__banner-principal__a{
+    .main__banner-principal__a {
         font-size: 1.2rem;
     }
-  }
+}
 
-  @media screen and (min-width:1024px) {
-    .main__banner-principal__h1{
+@media screen and (min-width: 1024px) {
+    .main__banner-principal__h1 {
         font-size: 4rem;
     }
 
-    .main__banner-principal__p{
+    .main__banner-principal__p {
         font-size: 1.5rem;
     }
 
-    .main__banner-principal__a{
+    .main__banner-principal__a {
         font-size: 1.5rem;
     }
-  }
+}
 /* ------------------------------------------------------------- */
 /* SECCION DE CURSOS */
-.cursos-section{
+.cursos-section {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 90dvw;
 }
 
-.main__cursos__h2{
+.main__cursos__h2 {
     margin: 1rem;
 }
 
-.cursos-card{
+.cursos-card {
     background-color: #fcb249;
-    margin: 1rem;
-    padding: .5rem;
+    margin: 1rem auto;
+    padding: 0.5rem;
     border-radius: 8px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.ancord-card{
+.ancord-card {
     text-decoration: none;
     color: black;
 }
 
-.cursos-section__card-img{
+.cursos-section__card-img {
     width: auto;
 }
 
-.cursos-section__card-titulo{
-    margin: .5rem;
+.cursos-section__card-titulo {
+    margin: 0.5rem;
 }
 
-.cursos-section__card-p{
+.cursos-section__card-p {
     color: white;
-    margin: .3rem;
+    margin: 0.3rem;
 }
 
-@media screen and (min-width:1024px) {
-    .cursos-section{
+@media screen and (min-width: 1024px) {
+    .cursos-section {
         width: 80dvw;
     }
 
-    .cursos-section__card-img{
+    .cursos-section__card-img {
         width: 80%;
     }
 }
 
 /* ------------------------------------------------------------- */
 /* PROPUESTA DE VALOR */
-.main__propuesta-img{
+.main__propuesta-img {
     width: 100%;
+}
+
+@media screen and (max-width: 767px) {
+    .main__propuesta {
+        display: none;
+    }
+}
+/* ------------------------------------------------------------- */
+/* COMPARATIVA */
+.main__comp {
+    display: flex;
+    flex-direction: column;
+    background-image: url(../assets/images/fondo3.png);
+    background-size: cover;
+    background-position: center;
+    align-items: center;
+    width: 100%;
+    padding: 3rem 0;
+}
+
+.container {
+    display: flex;
+    gap: 3rem;
+    justify-content: space-around;
+    width: 80%;
+    background-color: #fcb1498c;
+    padding: 40px;
+    border-radius: 8px;
+}
+.column {
+    background-color: #333;
+    padding: 40px;
+    border-radius: 10px;
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    background-color: #fcb249;
+    padding: 10px;
+    border-radius: 5px;
+    justify-content: center;
+}
+.header img {
+    margin-right: 10px;
+    height: 80px;
+}
+
+.header h2 {
+    color: black;
+    margin: 0px;
+    font-size: 22px;
+}
+/* cajas blancas */
+.main__comp-ul {
+    list-style-type: none;
+    padding: 0;
+    flex-grow: 1;
+}
+/* caracteristicas de cajas blancas */
+.main__comp-li {
+    background-color: white;
+    color: black;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    height: 35px;
+    justify-content: center;
+}
+/* caracteristicas cajas negras */
+.main__comp-li .black-box {
+    width: 30%;
+    height: 30px;
+    background-color: black;
+    border: 2px solid white;
+    position: absolute;
+    left: 0;
+    top: -15px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Ajuste de tamaño de iconos */
+.main__comp-li .black-box img {
+    width: 30%;
+    max-height: 42px;
+}
+
+/* ajuste espacio para el cuadro */
+.main__comp-li span {
+    margin-left: 70px;
+    text-align: right;
+    width: 100%;
+}
+
+/* Ajuste de espacio Button*/
+.main__comp-a {
+    background-color: #055bb5;
+    color: white;
+    border-radius: 8px;
+    padding: 0.5rem;
+    margin: 1rem auto;
+    text-decoration: none;
+}
+
+/* ajuste de efecto button */
+.main__comp-a:hover {
+    background-color: #fcb249;
+    color: black;
+}
+/* media queries */
+@media (max-width: 767px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+    .column {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}
+@media (min-width: 768px) and(max-width:1024px) {
+    .container {
+        width: 100%;
+        padding: 20px;
+    }
+    .column {
+        width: 45%;
+        padding: 20px;
+    }
+}
+@media (min-width: 1025px) {
+    .container {
+        width: 80%;
+        padding: 40px;
+    }
+    .column {
+        width: 45%;
+        padding: 40px;
+    }
 }
 /* ------------------------------------------------------------- */
 /* BANNER SECUNDARIO */
@@ -186,41 +346,40 @@ main{
 .main__banner-secundario__h1 {
     background-color: #fcb249;
     border-radius: 8px;
-    font-size: larger;
-    padding: .5rem;
+    font-size: 1.5rem;
+    padding: 0.5rem;
     color: white;
     width: 80%px;
     text-align: center;
     font-size: 1rem;
 }
 
-.main__banner-secundario__p{
-    font-size: .75rem;
+.main__banner-secundario__p {
+    font-size: 1rem;
     width: 80%;
 }
 
 .boton-inscribete {
     background-color: #4893fc;
     color: white;
-    padding: .5rem;
-    margin: .5rem;
+    padding: 0.5rem;
+    margin: 0.5rem;
     text-decoration: none;
     border-radius: 5px;
     margin-top: 10px;
     transition: background-color 0.3s ease-in;
     display: inline-block;
-    font-size: .75rem;
+    font-size: 1rem;
 }
 
 .boton-inscribete:hover {
     background-color: #e649198f;
 }
 
-
 /* Estilos para tablets */
 @media (min-width: 768px) and (max-width: 1024px) {
     .banner-secundario {
-        background-image: url('../assets/images/Banner_secundario_ipad.webp');
+        background-image: url("../assets/images/Banner_secundario_ipad.webp");
         background-size: cover;
         background-position: center;
     }
@@ -229,16 +388,84 @@ main{
 /* Estilos para pantallas de escritorio */
 @media (min-width: 1025px) {
     .banner-secundario {
-        background-image: url('../assets/images/Banner_secundario_Web.webp');
+        background-image: url("../assets/images/Banner_secundario_Web.webp");
         background-size: cover;
         background-position: center;
         max-height: 800px;
     }
-} 
+}
+/* ------------------------------------------------------------- */
+/* TESTIMONIOS */
+
+.main__testimonios {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem 0;
+    width: 99dvw;
+}
+
+h4 {
+    color: #fcb249;
+    text-align: center;
+    margin: 0.75rem;
+}
+
+.main__test-container {
+    display: flex;
+    gap: 2rem;
+    background-color: #fcb14954;
+    margin: 2rem 0;
+    width: 99dvw;
+}
+
+.test-img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+}
+
+.test-img {
+    width: 35%;
+    object-fit: contain;
+    margin: 10px auto;
+}
+
+.rating {
+    color: #fcb249;
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+
+.primero,
+.segundo,
+.tercero,
+.cuarto {
+    border-radius: 8px;
+    box-shadow: 2px 2px 5px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+}
+
+.test-p {
+    font-size: small;
+    margin: 0.5rem;
+}
+
+@media (max-width: 768px) {
+    .main__test-container {
+        flex-direction: column;
+    }
+}
 /* ------------------------------------------------------------- */
 /* FAQ */
 
-.main__faq{
+.main__faq {
     background-image: url(../assets/images/fondo3.png);
     background-position: center;
     background-size: cover;
@@ -298,9 +525,9 @@ main{
     transform: rotate(180deg);
 }
 
-.main__faq-a{
+.main__faq-a {
     text-decoration: none;
-    padding: .5rem;
+    padding: 0.5rem;
     background-color: #4893fc;
     border-radius: 8px;
     margin: 1rem auto;
@@ -309,45 +536,45 @@ main{
 }
 @media (max-width: 730px) {
     .footer {
-        flex-direction: column; 
-        align-items: flex-start; 
-        padding-left: 20px; 
+        flex-direction: column;
+        align-items: flex-start;
+        padding-left: 20px;
     }
 }
 
 /* ANIMACIONES */
 
-@media screen and (min-width:1024px) {
-    header{
-        -webkit-animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-        animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-        animation-delay: .1s;
+@media screen and (min-width: 1024px) {
+    header {
+        -webkit-animation: fade-in 1.2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+        animation: fade-in 1.2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+        animation-delay: 0.1s;
     }
-    
-    .header__logo{
-        -webkit-animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-        animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-        animation-delay: .3s;
+
+    .header__logo {
+        -webkit-animation: fade-in 1.2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+        animation: fade-in 1.2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+        animation-delay: 0.3s;
     }
-    
-    .header__nav{
-        -webkit-animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) ;
-        animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-        animation-delay: .5s;
+
+    .header__nav {
+        -webkit-animation: fade-in 1.2s cubic-bezier(0.39, 0.575, 0.565, 1);
+        animation: fade-in 1.2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+        animation-delay: 0.5s;
     }
-    
-    .header__container-button{
-        -webkit-animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-        animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-        animation-delay: .7s;
+
+    .header__container-button {
+        -webkit-animation: fade-in 1.2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+        animation: fade-in 1.2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+        animation-delay: 0.7s;
     }
-    
-    main{
-        -webkit-animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-        animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-        animation-delay: .8s;
+
+    main {
+        -webkit-animation: fade-in 1.2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+        animation: fade-in 1.2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+        animation-delay: 0.8s;
     }
-    
+
     @-webkit-keyframes fade-in {
         0% {
             opacity: 0;
@@ -366,20 +593,20 @@ main{
     }
 }
 
-section{
+section {
     animation: reveal linear both;
     animation-timeline: view();
     animation-range: entry 20% cover 30%;
 }
 
 @keyframes reveal {
-    from{
+    from {
         opacity: 0%;
-        scale: .5;
+        scale: 0.5;
         translate: 0 100px;
     }
 
-    to{
+    to {
         opacity: 100%;
         scale: 1;
         translate: 0 0;

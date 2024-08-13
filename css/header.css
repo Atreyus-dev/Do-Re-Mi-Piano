@@ -1,5 +1,4 @@
-
-header{
+header {
     background-color: black;
     display: flex;
     align-items: center;
@@ -8,30 +7,30 @@ header{
     width: 99dvw;
 }
 
-.over-position{
+.over-position {
     z-index: 100;
 }
 
-.header__picture-logo{
-    height: 5rem;
+.header__picture-logo {
+    height: 8rem;
 }
 
-.header__logo{
+.header__logo {
     height: 100%;
 }
 
-.header__nav-ul{
+.header__nav-ul {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 2rem;
 }
 
-.header__nav-li{
+.header__nav-li {
     list-style: none;
 }
 
-.header__nav{
+.header__nav {
     width: 100dvw;
     height: 100dvh;
     background-color: black;
@@ -42,73 +41,72 @@ header{
     z-index: 1;
 }
 
-.header__nav-a{
+.header__nav-a {
     color: white;
     font-size: 20px;
     text-decoration: none;
     padding: 0.5rem;
     border-radius: 8px;
     display: inline-block;
-    transition: all .3s ease;
+    transition: all 0.3s ease;
 }
 
-.header__nav-a:hover{
+.header__nav-a:hover {
     scale: 1.1;
     background-color: #c7c7cc;
 }
 
-.header__container-button{
+.header__container-button {
     display: flex;
     gap: 1rem;
 }
 
-.header-a{
+.header-a {
     color: white;
     font-size: 20px;
     text-decoration: none;
-    padding: .5rem;
+    padding: 0.5rem;
     border-radius: 8px;
-    transition: all .3s ease;
+    transition: all 0.3s ease;
 }
 
-.header-a:hover{
+.header-a:hover {
     scale: 1.2;
 }
 
-.header__button-1{
+.header__button-1 {
     background-color: #fcb249;
 }
 
-.header__button-2{
+.header__button-2 {
     background-color: #4893fc;
 }
 
-#checkbox{
+#checkbox {
     display: none;
 }
 
-#checkbox:checked~.header__nav{
+#checkbox:checked ~ .header__nav {
     display: grid;
     z-index: 10;
 }
 
 /* MEDIA QUERYS */
 
-@media screen and (min-width:767px) {
-    .header__nav{
+@media screen and (min-width: 767px) {
+    .header__nav {
         width: auto;
         height: auto;
         position: static;
         top: auto;
         display: flex;
-        
     }
 
-    .header__nav-ul{
+    .header__nav-ul {
         flex-direction: row;
     }
-    
-    .header__menu-button{
+
+    .header__menu-button {
         display: none;
     }
 }

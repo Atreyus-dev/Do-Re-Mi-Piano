@@ -1,18 +1,23 @@
 @font-face {
-    font-family: 'Montserrat';
-    src: url('../assets/fonts/Montserrat-VariableFont_wght.ttf') format('truetype');
+    font-family: "Montserrat";
+    src: url("../assets/fonts/Montserrat-VariableFont_wght.ttf")
+        format("truetype");
     font-weight: normal;
     font-style: normal;
 }
 
 body {
-    font-family: 'Montserrat', Arial, sans-serif;
-    background-color: #f4f4f4;
+    font-family: "Montserrat", Arial, sans-serif;
+
     display: grid;
     grid-template-rows: auto 1fr auto;
     background-image: url("../assets/images/fondo3.png");
     background-size: cover;
     background-position: center;
+}
+
+main {
+    background-color: #fcb14950;
 }
 
 .register-container {
@@ -21,13 +26,13 @@ body {
     align-items: center;
     width: 100%;
     height: 100vh;
-    background-color: #fcb14933;
+    margin: 3rem 0;
 }
 
 .register-box {
     background: #fff;
     padding: 40px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     text-align: center;
     width: 50%;
@@ -83,4 +88,10 @@ body {
 
 .register-box a:hover {
     color: #055bb5;
+}
+
+@media screen and (max-width: 767px) {
+    .register-box {
+        width: 90%;
+    }
 }
