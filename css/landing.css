@@ -1,0 +1,234 @@
+@font-face {
+    font-family: Montserrat;
+    src: url(../assets/fonts/Montserrat-VariableFont_wght.ttf);
+}
+
+body {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100dvh;
+    font-family: Montserrat, Arial, Helvetica, sans-serif;
+}
+
+main {
+    width: 100dvw;
+}
+
+/* Banner principal */
+.main__banner-principal__container {
+    position: relative;
+    max-height: 800px;
+    overflow: hidden;
+}
+
+.main__banner-principal__video {
+    width: 100%;
+    aspect-ratio: 16/9;
+}
+
+.center-box {
+    position: absolute;
+    inset: 0;
+    margin: auto;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.527);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    width: fit-content;
+    height: fit-content;
+    border-radius: 8px;
+}
+
+.main__banner-principal__h1 {
+    font-size: larger;
+    font-weight: bolder;
+    background-color: #fcb249;
+    padding: 0.5rem;
+    border-radius: 8px;
+    margin: 0.5rem;
+}
+
+.main__banner-principal__p {
+    margin: 20px;
+}
+
+.main__banner-principal__a {
+    padding: 0.5rem;
+    margin: 0.5rem;
+    background-color: #fcb249; /* Color del botón */
+    color: white; /* Color del texto dentro del botón */
+    border-radius: 8px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: small;
+}
+
+.insc {
+    background-color: #4893fc;
+}
+
+@media screen and (min-width: 767px) {
+    .main__banner-principal__h1 {
+        font-size: 2rem;
+    }
+
+    .main__banner-principal__p {
+        font-size: 1.1rem;
+    }
+
+    .main__banner-principal__a {
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .main__banner-principal__h1 {
+        font-size: 4rem;
+    }
+
+    .main__banner-principal__p {
+        font-size: 1.5rem;
+    }
+
+    .main__banner-principal__a {
+        font-size: 1.5rem;
+    }
+}
+
+/* ------------------------------------------------------------ */
+/* section-cursos */
+.main__section-cursos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main__section-cursos__container-h1 {
+    background-color: #fcb249;
+    width: 100%;
+}
+
+.main__section-cursos__h1 {
+    text-align: center;
+}
+
+.main__section-cursos__main-wraper {
+    background-image: url(../assets/images/fondo3.png);
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    padding: 3rem 2rem;
+    gap: 1rem;
+}
+
+.main__section-cursos__card {
+    background-color: #fcb249;
+    border-radius: 8px;
+    box-shadow: 0 0 5px 0 black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    gap: 0.75rem;
+    margin: 0 auto;
+    width: 90%;
+}
+
+.main__section-2__li {
+    margin: 0 0.5rem;
+}
+
+.main__section-cursos__ancord {
+    text-decoration: none;
+    color: white;
+    padding: 0.5rem;
+    background-color: #4893fc;
+    border-radius: 8px;
+    margin: 1rem 0;
+}
+
+@media screen and (min-width: 767px) and (max-width: 1650px) {
+    .main__section-cursos__card {
+        width: 650px;
+    }
+}
+@media screen and (min-width: 1650px) {
+    .main__section-cursos__main-wraper {
+        flex-direction: row;
+    }
+}
+
+/* ----------------------------------------------------------- */
+/* Banner secundario */
+
+.banner-secundario {
+    color: white;
+    background-image: url("../assets/images/Banner_secundario_ipad.webp");
+    background-size: cover;
+    width: 99dvw;
+    aspect-ratio: 16/9;
+    display: grid;
+    place-content: center;
+}
+
+.contenido-banner {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.main__banner-secundario__h1 {
+    background-color: #fcb249;
+    border-radius: 8px;
+    font-size: larger;
+    padding: 0.5rem;
+    color: white;
+    width: 80%px;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.main__banner-secundario__p {
+    font-size: 0.75rem;
+    width: 80%;
+}
+
+.boton-inscribete {
+    background-color: #4893fc;
+    color: white;
+    padding: 0.5rem;
+    margin: 0.5rem;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: background-color 0.3s ease-in;
+    display: inline-block;
+    font-size: 0.75rem;
+}
+
+.boton-inscribete:hover {
+    background-color: #e649198f;
+}
+
+/* Estilos para tablets */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .banner-secundario {
+        background-image: url("../assets/images/Banner_secundario_ipad.webp");
+        background-size: cover;
+        background-position: center;
+    }
+}
+
+/* Estilos para pantallas de escritorio */
+@media (min-width: 1025px) {
+    .banner-secundario {
+        background-image: url("../assets/images/Banner_secundario_Web.webp");
+        background-size: cover;
+        background-position: center;
+        max-height: 800px;
+    }
+}
+/* ----------------------------------------------- */
